@@ -32,12 +32,16 @@ const Home = () => {
   return (
     <div className="home">
       <h2>Strona główna</h2>
-       <p>
-      {name} ma {age} lat.
-     </p>
-     <button onClick={handleCLick}>Sprawdź</button> 
+      <p>
+        {name} ma {age} lat.
+      </p>
+      <button onClick={handleCLick}>Sprawdź</button>
 
-      <BlogList blogs={blogs} title='Wszystkie artykuły' />
+      <BlogList blogs={blogs} title="Wszystkie artykuły" />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "czarek")}
+        title="Blog Czarka"
+      />
     </div>
   );
 };
