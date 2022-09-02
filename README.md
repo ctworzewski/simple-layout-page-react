@@ -1,1 +1,1 @@
-# simple template page in Ract.js
+# simple template page in React.js
